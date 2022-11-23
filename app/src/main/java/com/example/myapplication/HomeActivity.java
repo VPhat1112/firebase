@@ -192,8 +192,8 @@ public class HomeActivity extends AppCompatActivity {
         final EditText edtNameScience = (EditText) dialog.findViewById(R.id.edtaddtenkhoahoc);
         final EditText edtNameNormal = (EditText) dialog.findViewById(R.id.edtaddTenthuong);
         final EditText edtInformation = (EditText) dialog.findViewById(R.id.edtaddInformation);
-        EditText editUses = (EditText) findViewById(R.id.edtaddUses);
-        EditText edtDosage = (EditText) findViewById(R.id.edtadddosage);
+        EditText editUses = (EditText) dialog.findViewById(R.id.edtaddUses);
+        EditText edtDosage = (EditText) dialog.findViewById(R.id.edtadddosage);
         Button btnThem = (Button) dialog.findViewById(R.id.LuuCay);
         Button btnHuy = (Button) dialog.findViewById(R.id.btnHuy);
 
