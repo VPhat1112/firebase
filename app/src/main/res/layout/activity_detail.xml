@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="#F4F271">
+
+    <TextView
+        android:id="@+id/TextMedicine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="MEDICINE"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+
+
+    <EditText
+        android:id="@+id/edtaddtenkhoahocDT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextMedicine"
+        android:hint="Tên khoa học"
+        android:maxLines="1"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/edtaddTenthuongDT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtaddtenkhoahocDT"
+        android:hint="tên thường"
+        android:maxLines="1"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/edtaddInformationDT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtaddTenthuongDT"
+        android:hint="thông tin"
+        android:minHeight="48dp" />
+
+
+    <EditText
+        android:id="@+id/edtaddUsesDT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtaddInformationDT"
+        android:hint="Công dụng"
+        android:maxLines="1"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/edtadddosageDT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtaddUsesDT"
+        android:hint="Liều dùng"
+        android:maxLines="1"
+        android:minHeight="48dp" />
+
+
+</RelativeLayout>

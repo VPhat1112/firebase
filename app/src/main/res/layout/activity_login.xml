@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bklogin">
+    <LinearLayout
+        android:id="@+id/Layout_TD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            android:padding="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Layout_edit"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Layout_TD"
+        android:orientation="vertical"
+
+        >
+        <EditText
+            android:id="@+id/edit_user"
+            android:padding="20dp"
+            android:hint="Email"
+            android:maxLines="1"
+            android:textColor="#FF0000"
+            android:textSize="24dp"
+            android:textColorHint="#FFF"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_edit"/>
+        <EditText
+            android:id="@+id/edit_password"
+            android:padding="20dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:maxLines="1"
+            android:textSize="24dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_edit"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/Layout_edit"
+        android:id="@+id/lofogot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="right">
+        <TextView
+            android:id="@+id/Tv_Forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+            android:text="Forgot your password?"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/BtnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lofogot"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/textview_button"
+        android:gravity="center"
+        android:text="Login"
+        android:textColor="#FFF"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/Createnew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BtnLogin"
+        android:gravity="center"
+        android:text="create new ?"
+        android:textColor="#FFF"
+        android:textSize="20dp" />
+</RelativeLayout>

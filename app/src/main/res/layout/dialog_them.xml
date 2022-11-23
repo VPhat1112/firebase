@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="#F4F271">
+
+    <TextView
+        android:id="@+id/TextSV245"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="ADD Medicine"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+
+
+    <EditText
+        android:id="@+id/edtaddtenkhoahoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextSV245"
+        android:hint="Nhập Tên khoa học"
+        android:maxLines="1"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/edtaddTenthuong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_below="@+id/edtaddtenkhoahoc"
+        android:hint="Nhập tên thường"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/edtaddInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtaddTenthuong"
+        android:hint="Nhập thông tin"
+        android:maxLines="1"
+        android:minHeight="48dp" />
+
+
+    <EditText
+        android:id="@+id/edtaddUses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtaddInformation"
+        android:hint="Công dụng"
+        android:maxLines="1"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/edtadddosage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtaddUses"
+        android:hint="Liều dùng"
+        android:maxLines="1"
+        android:minHeight="48dp" />
+
+    <LinearLayout
+        android:layout_below="@+id/edtadddosage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnHuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="Hủy" />
+
+        <Button
+            android:id="@+id/LuuCay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="Lưu" />
+    </LinearLayout>
+
+</RelativeLayout>

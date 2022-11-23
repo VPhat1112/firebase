@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#03B39B"
+    android:layout_height="wrap_content"
+    android:id="@+id/loitem"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/img_View"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/medicine_sleep" />
+
+    <RelativeLayout
+        android:id="@+id/Medicine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/img_View"
+        android:paddingLeft="10dp">
+
+        <LinearLayout
+            android:id="@+id/Name"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Tv_NameMedicineSc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Tên Khoa học: "
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Tv_NameMedicineSc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Medicine"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFF"
+                android:textSize="20dp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/NameN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Name"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Tv_NameMedicineN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Name"
+                android:layout_toEndOf="@+id/img_View"
+                android:hint="Tên thường: "
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFF"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Tv_NameMedicineN1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Name"
+                android:layout_toEndOf="@+id/Tv_NametreeN"
+                android:hint="Medicine"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFF"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/NameN"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Tv_Info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/NameN"
+                android:layout_toEndOf="@+id/img_View"
+                android:hint="Đặc tính : "
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFF"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Tv_Info1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/NameN"
+                android:layout_toEndOf="@+id/Tv_Info"
+                android:hint="Đặc tính"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFF"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Uses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Tv_Uses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/info"
+                android:layout_toEndOf="@+id/img_View"
+                android:hint="Công dụng: "
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFF"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Tv_Uses1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/info"
+                android:layout_toEndOf="@+id/Tv_LeafColor"
+                android:hint="Công dụng"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFF"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/dosage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Uses"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Tv_dosage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/info"
+                android:hint="Liều lượng: "
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFF"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Tv_dosage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/info"
+                android:hint="Liều lượng"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFF"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/Medicine"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/deleteTV"
+            android:background="@drawable/ic_baseline_delete_24"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
